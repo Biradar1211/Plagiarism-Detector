@@ -1,19 +1,33 @@
-# 📄 Plagiarism Detector using Machine Learning
+# 🔍 Plagiarism Detector using Machine Learning
 
-This Python project uses machine learning and natural language processing to detect plagiarism between two text files.
+This project builds a machine learning model that detects plagiarism between two pieces of text using TF-IDF vectorization and similarity comparison.
 
-## 🔧 What it does:
-- Reads two `.txt` files
-- Vectorizes text using TF-IDF
-- Calculates cosine similarity between the documents
-- Reports similarity score and detection
+## 📁 Dataset
 
-## 🛠 Tools Used:
+- Used a dataset containing original and plagiarized text pairs
+- Format: `source_text`, `plagiarized_text`, `label`
+
+## 🔧 Features
+
+- Preprocessing: Lowercasing, removing stopwords
+- TF-IDF vectorization of both text columns
+- Cosine similarity used as a feature
+- Trained with Logistic Regression
+
+## 📈 Output
+
+- Model Accuracy, Precision, Recall, and F1-score
+- Shows how well the model can classify plagiarized vs. original
+
+## 🛠 Tools Used
+
 - Python
-- Scikit-learn (TF-IDF + cosine similarity)
+- Jupyter Notebook
+- Pandas, Sklearn, Numpy, Matplotlib
 
-## 🚀 How to Run
+## 📦 Requirements
+
+Install dependencies using:
 
 ```bash
 pip install -r requirements.txt
-python main.py
